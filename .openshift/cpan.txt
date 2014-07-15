@@ -15,7 +15,6 @@ List::Util::XS
 LWP::UserAgent
 Mail::IMAPClient
 IO::Socket::SSL
-ModPerl::Util
 Net::LDAP
 Net::SSL
 Compress::Zlib
