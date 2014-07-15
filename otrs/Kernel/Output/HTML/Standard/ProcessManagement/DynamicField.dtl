@@ -1,0 +1,27 @@
+# --
+# DynamicField.dtl - provides DynamicField HTML for the AgentTicketProcess.pm
+# Copyright (C) 2001-2014 OTRS AG, http://otrs.com/
+# --
+# This software comes with ABSOLUTELY NO WARRANTY. For details, see
+# the enclosed file COPYING for license information (AGPL). If you
+# did not receive this file, see http://www.gnu.org/licenses/agpl.txt.
+# --
+
+<!-- dtl:block:rw:DynamicField -->
+<div class="Row Row_DynamicField_$Data{"Name"}">
+<!-- dtl:block:rw:DynamicField:DescriptionLong -->
+    <span class="FieldHelpContainer">
+        <i class="icon-question-sign FieldHelpTrigger"></i>
+        <span>$QData{"DescriptionLong"}</span>
+    </span>
+<!-- dtl:block:rw:DynamicField:DescriptionLong -->
+    $Data{"Label"}
+    <div class="Field">
+        $Data{"Content"}
+<!-- dtl:block:rw:DynamicField:DescriptionShort -->
+        <div class="FieldExplanation">$Data{"DescriptionShort"}</div>
+<!-- dtl:block:rw:DynamicField:DescriptionShort -->
+    </div>
+    <div class="Clear"></div>
+</div>
+<!-- dtl:block:rw:DynamicField -->

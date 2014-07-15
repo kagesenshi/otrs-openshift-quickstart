@@ -1,0 +1,3 @@
+
+# generate dashboard stats every hour
+5 * * * *    $HOME/bin/otrs.GenerateDashboardStats.pl >> /dev/null

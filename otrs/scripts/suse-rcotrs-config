@@ -1,0 +1,62 @@
+# --
+# rcscript config settings for OTRS (http://otrs.org/)
+# --
+
+#
+# program name
+#
+OTRS_PROG="OTRS"
+
+#
+# OTRS home (root) directory
+#
+OTRS_ROOT=/opt/otrs
+
+#
+# if one of these is false, it will not be checked at the startup!
+#
+OTRS_HTTP_RUNNING=1
+OTRS_CRON_RUNNING=1
+
+#
+# Used webserver [apache]
+#
+OTRS_USED_WEBSERVER=Apache
+OTRS_USED_WEBSERVER_RCSCRIPT=rcapache2
+
+#
+# cron stuff
+#
+OTRS_CRON_DIR=$OTRS_ROOT/var/cron
+OTRS_CRON_TMP_FILE=$OTRS_ROOT/var/tmp/cron
+OTRS_CRON_USER=" -u otrs "
+
+#
+# get host name
+#
+OTRS_HOST=`hostname -f`
+
+#
+# OTRS location - means http://host/$OTRS_HTTP_LOCATION/index.pl
+#
+OTRS_HTTP_LOCATION="otrs"
+
+#
+# location of otrs.PostMaster.pl
+#
+OTRS_POSTMASTER=$OTRS_ROOT/bin/otrs.PostMaster.pl
+
+#
+# location of otrs.CheckDB.pl
+#
+OTRS_CHECKDB=$OTRS_ROOT/bin/otrs.CheckDB.pl
+
+#
+# location of otrs.CleanUp.pl
+#
+OTRS_CLEANUP=$OTRS_ROOT/bin/otrs.CleanUp.pl
+
+#
+# location of OTRS spool dir
+#
+OTRS_SPOOLDIR=$OTRS_ROOT/var/spool

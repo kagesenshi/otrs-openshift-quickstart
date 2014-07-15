@@ -1,0 +1,4 @@
+#!/bin/bash
+
+cd $OPENSHIFT_HOMEDIR/otrs/bin/
+./otrs/bin/otrs.CheckModules.pl 

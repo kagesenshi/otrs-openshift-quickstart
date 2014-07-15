@@ -1,0 +1,237 @@
+/**
+ * @project     OTRS (http://www.otrs.org) - Customer Frontend
+ * @copyright   OTRS AG
+ * @license     AGPL (http://www.gnu.org/licenses/agpl.txt)
+ */
+
+@media screen,projection,tv,handheld {
+
+/**
+ * @package     OTRS Framework - Skin "Default"
+ * @section     Customer
+ */
+
+.TicketView .Content {
+    padding: 0;
+}
+
+table.Overview {
+    top: -1px;
+    width: 100%;
+    color: #444;
+    text-shadow: 0 1px 0 #FFF;
+    zoom: 1;
+    clear: both;
+    position: relative;
+}
+
+.Overview thead {
+    background: #DCDDDD;
+    background: -moz-linear-gradient(top,  #E8E9E9 0%, #b6b6b6 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#E8E9E9), color-stop(100%,#b6b6b6));
+    background: -webkit-linear-gradient(top,  #E8E9E9 0%,#b6b6b6 100%);
+    background: -o-linear-gradient(top,  #E8E9E9 0%,#b6b6b6 100%);
+    background: -ms-linear-gradient(top,  #E8E9E9 0%,#b6b6b6 100%);
+    background: linear-gradient(to bottom,  #E8E9E9 0%,#b6b6b6 100%);
+    display: none;
+}
+
+.Sortable thead {
+    display: table-header-group;
+}
+
+.Overview thead th {
+    padding: 0;
+    vertical-align: bottom;
+    border-right: 1px solid #999;
+    border-bottom: 1px solid #999;
+}
+
+.RTL .Overview thead th {
+    border-right: none;
+    border-left: 1px solid #666;
+}
+
+.Overview thead .Status {
+    padding-left: 0;
+}
+
+.Overview thead a {
+    padding: 1px 13px 4px 8px;
+    height: 10px;
+    color: #444;
+    font-size: 11px;
+    text-transform: uppercase;
+    display: block;
+    text-shadow: 0 1px 0 #EEE;
+    position: relative;
+    white-space: nowrap;
+}
+
+.Overview thead span {
+    padding: 1px 13px 4px 8px;
+    height: 10px;
+    color: #444;
+    font-size: 11px;
+    text-transform: uppercase;
+    display: block;
+    text-shadow: 0 1px 0 #EEE;
+}
+
+.Overview thead .SortAscending a,
+.Overview thead .SortDescending a {
+    color: #222;
+    font-weight: 600;
+    text-align: left;
+    background: #c4c4c4;
+    background: -moz-linear-gradient(top,  #c4c4c4 0%, #bababa 50%, #aaaaaa 50%, #a9a9a9 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#c4c4c4), color-stop(50%,#bababa), color-stop(50%,#aaaaaa), color-stop(100%,#a9a9a9));
+    background: -webkit-linear-gradient(top,  #c4c4c4 0%,#bababa 50%,#aaaaaa 50%,#a9a9a9 100%);
+    background: -o-linear-gradient(top,  #c4c4c4 0%,#bababa 50%,#aaaaaa 50%,#a9a9a9 100%);
+    background: -ms-linear-gradient(top,  #c4c4c4 0%,#bababa 50%,#aaaaaa 50%,#a9a9a9 100%);
+    background: linear-gradient(to bottom,  #c4c4c4 0%,#bababa 50%,#aaaaaa 50%,#a9a9a9 100%);
+    text-shadow: 0 1px 0 #BBB;
+    padding-right: 20px;
+}
+
+.Overview thead .SortDescending a {
+    background: #c4c4c4;
+    background: -moz-linear-gradient(top,  #c4c4c4 0%, #bababa 50%, #aaaaaa 50%, #a9a9a9 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#c4c4c4), color-stop(50%,#bababa), color-stop(50%,#aaaaaa), color-stop(100%,#a9a9a9));
+    background: -webkit-linear-gradient(top,  #c4c4c4 0%,#bababa 50%,#aaaaaa 50%,#a9a9a9 100%);
+    background: -o-linear-gradient(top,  #c4c4c4 0%,#bababa 50%,#aaaaaa 50%,#a9a9a9 100%);
+    background: -ms-linear-gradient(top,  #c4c4c4 0%,#bababa 50%,#aaaaaa 50%,#a9a9a9 100%);
+    background: linear-gradient(to bottom,  #c4c4c4 0%,#bababa 50%,#aaaaaa 50%,#a9a9a9 100%);
+}
+
+.Overview thead .SortDescending a:after {
+    content: "\25BC";
+    display: block;
+    position: absolute;
+    right: 2px;
+    top: 0px;
+    text-shadow: 1px 1px 0px #fff;
+}
+
+.Overview thead .SortAscending a:after {
+    content: "\25B2";
+    display: block;
+    position: absolute;
+    right: 2px;
+    top: 0px;
+    text-shadow: 1px 1px 0px #fff;
+}
+
+.Overview tbody {
+    background-color: transparent;
+}
+
+.Overview tbody tr {
+    border-bottom: 1px solid #FFF;
+}
+
+.Overview tbody tr:active {
+    background-color: #DDD;
+}
+
+.Overview tbody tr:first-child {
+    border-top: none;
+}
+
+.Overview tbody td {
+    padding: 6px 8px 3px;
+    white-space: nowrap;
+    border: 0px solid;
+}
+
+.Overview tbody a {
+    color: #444;
+    text-decoration: none;
+    outline: none;
+}
+
+.Overview table a:hover {
+    color: #000;
+}
+
+/**
+ * @subsection  OverviewTable zebra style
+ */
+.Overview tbody tr td {
+    background-color: #FBFBFB;
+}
+
+.Overview tbody tr.Even td {
+    background-color: #F2F2F2;
+}
+
+.Overview tbody tr:nth-child(even) td {
+    background-color: #F2F2F2;
+}
+
+/**
+ * @subsection  TableData Styles
+ */
+.State {
+    padding-left: 8px;
+}
+
+.Title div {
+    height: 14px;
+    color: #777;
+    overflow: hidden;
+    white-space: normal;
+}
+.Title h2 {
+    margin-bottom: 0;
+    font-size: 12px;
+    font-weight: bold;
+    color: #444;
+    display: inline;
+}
+.Age {
+    padding-right: 8px;
+    text-align: right;
+}
+.Overview thead th.Age {
+    border-right: none;
+    border-left: none;
+    text-align: left;
+}
+.RTL .Overview thead th.Age {
+    text-align: right;
+}
+/**
+ * @subsection  Table Style Hovered
+ */
+.Overview tbody tr:hover td {
+    background: #FBBA49;
+    background: -moz-linear-gradient(top, #FFE7BD 0%, #FBBA49 20%, #F6AD3E 51%, #F3960D 51%, #E98207 95%, #E07006 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#FFE7BD), color-stop(20%,#FBBA49), color-stop(51%,#F6AD3E), color-stop(51%,#F3960D), color-stop(95%,#E98207), color-stop(100%,#E07006));
+    background: -webkit-linear-gradient(top, #FFE7BD 0%,#FBBA49 20%,#F6AD3E 51%,#F3960D 51%,#E98207 95%,#E07006 100%);
+    background: -o-linear-gradient(top, #FFE7BD 0%,#FBBA49 20%,#F6AD3E 51%,#F3960D 51%,#E98207 95%,#E07006 100%);
+    background: -ms-linear-gradient(top, #FFE7BD 0%,#FBBA49 20%,#F6AD3E 51%,#F3960D 51%,#E98207 95%,#E07006 100%);
+    background: linear-gradient(top, #FFE7BD 0%,#FBBA49 20%,#F6AD3E 51%,#F3960D 51%,#E98207 95%,#E07006 100%);
+}
+.Overview tbody tr:hover {
+    border-color: #CCC;
+}
+.Overview tbody tr:hover td,
+.Overview tbody tr:hover a {
+    color: #452A03;
+    text-shadow: 0 1px 0 #F4B259;
+}
+.Overview tbody tr:hover .Title div {
+    color: #724807;
+    text-shadow: 0 1px 0 #F4B259;
+}
+/**
+ * @subsection  Table Style Active
+ */
+
+.Overview tbody tr:active td {
+    padding: 7px 8px 2px;
+    background-position: bottom;
+}
+
+} /* end @media */

@@ -1,0 +1,70 @@
+/**
+ * @project     OTRS (http://www.otrs.org) - Agent Frontend
+ * @copyright   OTRS AG
+ * @license     AGPL (http://www.gnu.org/licenses/agpl.txt)
+ */
+
+/**
+ * @package     Skin "Default"
+ * @section     Application
+ * @subsection  DynamicFields
+ */
+
+@media screen,projection,tv,handheld {
+
+/**
+ * @subsubsection     AdminDynamicFields
+ */
+
+.Header li {
+    margin-left: -3px;
+    padding-left: 2px;
+    float: left;
+    position: relative;
+}
+
+.RTL .Header li {
+    margin-left: 0;
+    margin-right: -3px;
+    float: right;
+}
+
+.Header li:hover {
+    background: #F3970D;
+    background: -moz-linear-gradient(top,  #fdf0df 0%, #fbb948 15%, #f6ad3e 50%, #f3970d 50%, #e88007 96%, #dd6905 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fdf0df), color-stop(15%,#fbb948), color-stop(50%,#f6ad3e), color-stop(50%,#f3970d), color-stop(96%,#e88007), color-stop(100%,#dd6905));
+    background: -webkit-linear-gradient(top,  #fdf0df 0%,#fbb948 15%,#f6ad3e 50%,#f3970d 50%,#e88007 96%,#dd6905 100%);
+    background: -o-linear-gradient(top,  #fdf0df 0%,#fbb948 15%,#f6ad3e 50%,#f3970d 50%,#e88007 96%,#dd6905 100%);
+    background: -ms-linear-gradient(top,  #fdf0df 0%,#fbb948 15%,#f6ad3e 50%,#f3970d 50%,#e88007 96%,#dd6905 100%);
+    background: linear-gradient(to bottom,  #fdf0df 0%,#fbb948 15%,#f6ad3e 50%,#f3970d 50%,#e88007 96%,#dd6905 100%);
+}
+
+.Header li.Active,
+.Header li.Active:hover,
+.Header li.Active:active {
+    padding-left: 2px;
+    background-position: 0 -50px;
+}
+
+.WidgetSimple > .DynamicFieldsContent {
+    overflow: auto;
+    padding: 0px 8px 10px;
+}
+
+.WidgetSimple > .DynamicFieldsPagination {
+    overflow: auto;
+    padding: 0px 8px 0px;
+}
+
+.SpacingTopMini {
+    margin-top: 5px;
+}
+
+.ValueRow input{
+    margin-right: 13px;
+}
+
+.RTL .ValueRow input{
+    margin-left: 13px;
+}
+}/* end @media */

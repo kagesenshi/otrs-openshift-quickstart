@@ -1,0 +1,3 @@
+
+# fetch emails every 10 minutes
+*/10 * * * *    $HOME/bin/otrs.PostMasterMailbox.pl >> /dev/null

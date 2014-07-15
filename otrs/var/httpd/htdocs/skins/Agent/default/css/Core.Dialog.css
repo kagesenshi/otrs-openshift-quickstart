@@ -1,0 +1,219 @@
+/**
+ * @project     OTRS (http://www.otrs.org) - Agent Frontend
+ * @copyright   OTRS AG
+ * @license     AGPL (http://www.gnu.org/licenses/agpl.txt)
+ */
+
+/**
+ * @package     Skin "Default"
+ * @section     Dialogs
+ */
+
+@media screen,projection,tv,handheld {
+
+/**
+ * @subsection  Overlay
+ */
+#Overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: 0.5;
+    filter: alpha(opacity = 50);
+    z-index: 3500;
+}
+
+/**
+ * @subsection  Dialog
+ */
+.Dialog {
+    position: absolute;
+    z-index: 3501;
+    min-width: 150px;
+    background: #FFF;
+    -webkit-box-shadow: 2px 2px 5px #000;
+    box-shadow: 2px 2px 5px #000;
+    border-radius: 8px;
+}
+
+.Dialog > .Header {
+    cursor: move;
+    display: block;
+    position: relative;
+    height: 25px;
+    background: #dcdcdc;
+    background: -moz-linear-gradient(top,  #f1f1f1 0%, #dcdcdc 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f1f1f1), color-stop(100%,#dcdcdc));
+    background: -webkit-linear-gradient(top,  #f1f1f1 0%,#dcdcdc 100%);
+    background: -o-linear-gradient(top,  #f1f1f1 0%,#dcdcdc 100%);
+    background: -ms-linear-gradient(top,  #f1f1f1 0%,#dcdcdc 100%);
+    background: linear-gradient(to bottom,  #f1f1f1 0%,#dcdcdc 100%);
+    border-bottom: 1px solid #CCC;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.Dialog > .Header .Close {
+    display: block;
+    position: absolute;
+    height: 12px;
+    width: 12px;
+    right: 8px;
+    top: 7px;
+    color: #000;
+}
+
+.Dialog > .Header .Close:hover i {
+    color: #E57633;
+}
+
+.Dialog > .Header h1 {
+    padding: 5px 10px;
+    font-weight: normal;
+    font-size: 14px;
+    padding-top: 5px;
+}
+
+.Dialog > .Content {
+    overflow: hidden;
+    position: relative;
+}
+
+.Dialog > .Content > .InnerContent {
+    padding: 10px;
+    background: #FFF;
+    overflow-y: auto;
+    overflow-x: hidden;
+    max-height: 200px;
+}
+
+.Dialog > .Content > .ContentFooter {
+    padding: 6px 0 5px;
+    background: #d2d2d2;
+    background: -moz-linear-gradient(top,  #f1f1f1 0%, #d2d2d2 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f1f1f1), color-stop(100%,#d2d2d2));
+    background: -webkit-linear-gradient(top,  #f1f1f1 0%,#d2d2d2 100%);
+    background: -o-linear-gradient(top,  #f1f1f1 0%,#d2d2d2 100%);
+    background: -ms-linear-gradient(top,  #f1f1f1 0%,#d2d2d2 100%);
+    background: linear-gradient(to bottom,  #f1f1f1 0%,#d2d2d2 100%);
+    min-height: 20px;
+    border-top: 1px solid #CCC;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+.Dialog > .Footer {
+    padding: 6px 0 5px;
+    display: block;
+    position: relative;
+    background: #d2d2d2;
+    background: -moz-linear-gradient(top,  #f1f1f1 0%, #d2d2d2 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f1f1f1), color-stop(100%,#d2d2d2));
+    background: -webkit-linear-gradient(top,  #f1f1f1 0%,#d2d2d2 100%);
+    background: -o-linear-gradient(top,  #f1f1f1 0%,#d2d2d2 100%);
+    background: -ms-linear-gradient(top,  #f1f1f1 0%,#d2d2d2 100%);
+    background: linear-gradient(to bottom,  #f1f1f1 0%,#d2d2d2 100%);
+    border-top: 1px solid #CCC;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+.Dialog > .Footer.ContentFooter {
+    display: none;
+}
+
+/**
+ * subsection       Alert
+ */
+
+.Dialog.Alert span.Icon {
+    display: block;
+    width: 22px;
+    height: 35px;
+    float: left;
+    background: url(../img/dialog_alert.png) no-repeat;
+}
+
+.Dialog.Alert h2,
+.Dialog.Alert p {
+    margin-left: 35px;
+}
+
+.Dialog.Alert {
+    width: 450px;
+    top: 100px;
+    left: 300px;
+}
+
+
+
+/**
+ * subsection   Settings
+ */
+
+.Dialog fieldset {
+    margin-bottom: 15px;
+}
+
+.Dialog .WidgetSettingsForm fieldset {
+    margin-bottom: 0px;
+}
+
+.Dialog .Field.LayoutGrid {
+    padding-top: 7px;
+}
+
+.Dialog .Field.LayoutGrid .Tablelike {
+    width: 98%;
+}
+
+.Dialog .Buttons {
+    background: #ddd;
+    background: -moz-linear-gradient(top,  #eee 0%, #ddd 50%, #ccc 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#eee), color-stop(50%,#ddd), color-stop(100%,#ccc));
+    background: -webkit-linear-gradient(top,  #eee 0%,#ddd 50%,#ccc 100%);
+    background: -o-linear-gradient(top,  #eee 0%,#ddd 50%,#ccc 100%);
+    background: -ms-linear-gradient(top,  #eee 0%,#ddd 50%,#ccc 100%);
+    background: linear-gradient(to bottom,  #eee 0%,#ddd 50%,#ccc 100%);
+    border-top: 1px solid #ccc;
+    margin: 15px -8px -8px;
+    padding: 10px 10px 9px 10px;
+    text-align: center;
+}
+
+.Dialog .Field.LayoutGrid .AllocationList {
+    max-height: 192px;
+    overflow: auto;
+}
+
+.Field.LayoutGrid .AllocationList.AvailableFields {
+    max-height: 155px;
+}
+
+.Dialog .Field.LayoutGrid .AllocationList.OrderNumbers {
+    list-style: decimal inside;
+}
+
+.FilterInputContainer {
+    width: 98%;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    background-color: #eee;
+}
+
+.FilterInputContainer input {
+    width: 95%;
+    display: block;
+    margin: 7px auto;
+}
+
+#ContextSettingsDialogOverviewSmall {
+    width: 950px;
+    max-height: 600px;
+}
+
+
+} /* end @media */

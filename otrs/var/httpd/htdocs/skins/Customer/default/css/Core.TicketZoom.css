@@ -1,0 +1,528 @@
+/**
+ * @project     OTRS (http://www.otrs.org) - Customer Frontend
+ * @copyright   OTRS AG
+ * @license     AGPL (http://www.gnu.org/licenses/agpl.txt)
+ */
+
+@media screen,projection,tv,handheld {
+
+/**
+ * @package     OTRS Framework - Skin "Default"
+ * @section     TicketZoom
+ */
+
+/**
+ * @section     Header
+ */
+
+.TicketZoom .Content {
+    padding: 8px 10px 0;
+}
+
+.TicketHeader {
+    width: 80%;
+    overflow: hidden;
+    position: relative;
+}
+
+.TicketHeader h2 {
+    margin: 3px 0 0;
+    padding-left: 36px;
+    font-size: 24px;
+    line-height: 24px;
+    position: relative;
+    float: left;
+}
+.RTL .TicketHeader h2 {
+    padding: 0 36px 0 0;
+    float: right;
+}
+
+.Flag span.PriorityID-1 {
+    background-color:#03c4f0;
+}
+
+.Flag span.PriorityID-2 {
+    background-color:#83bfc8;
+}
+
+.Flag span.PriorityID-3 {
+    background-color:#cdcdcd;
+}
+
+.Flag span.PriorityID-4 {
+    background-color:#ffaaaa;
+}
+
+.Flag span.PriorityID-5 {
+    background-color:#ff505e;
+}
+
+.Flag {
+    top: 2px;
+    left: 6px;
+    width: 21px;
+    height: 16px;
+    line-height: 16px;
+    text-indent: -9999px;
+    position: absolute;
+    -webkit-box-shadow: 0 1px 0 #EEE;
+    box-shadow: 0 1px 0 #EEE;
+    display: block;
+}
+
+.RTL .Flag {
+    left: auto;
+    right: 6px;
+}
+
+.Flag span {
+    height: 15px;
+    line-height: 15px;
+    border: 1px solid transparent;
+    border-bottom: none;
+    display: block;
+}
+
+#ZoomSidebar {
+    float: right;
+    width: 18%;
+}
+
+#Metadata, #Activities {
+    line-height: 20px;
+    float: right;
+    margin-right: 5px;
+    width: 100%;
+    padding: 0px 0px 7px 0px;
+    border: 1px solid #E9E9E9;
+    border-bottom: 1px solid #DDD;
+    border-radius: 5px;
+    border-radius: 5px;
+    -webkit-box-shadow: 0 0 3px #EEE;
+    box-shadow: 0 0 2px #EEE;
+}
+
+#Activities {
+    margin-top: 20px;
+    padding: 0px;
+}
+
+#Activities li {
+    padding: 3px 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+#Activities li:last-child {
+    border-bottom: 0px;
+}
+
+.RTL #Metadata {
+    float: left;
+}
+
+#Metadata li {
+    padding: 2px 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+#Metadata li.Header {
+    padding: 0px;
+    margin-bottom: 7px;
+}
+
+#Activities li.Header {
+    padding: 0px;
+}
+
+#Metadata li.Header div.MessageHeader,
+#Activities li.Header div.MessageHeader {
+    padding: 2px 10px 1px 10px;
+}
+
+#Metadata li .Key {
+    color: #666;
+}
+
+#TicketOptions {
+    position: absolute;
+    right: 0px;
+    top: 5px;
+    overflow: hidden;
+}
+
+#TicketOptions li {
+    float: left;
+    margin-left: 5px;
+}
+
+#TicketOptions .Print {
+    width: 16px;
+    height: 16px;
+    margin: 0 0 0 2px;
+    line-height: 16px;
+    background: url(../img/printer.png) no-repeat;
+    text-indent: -9999px;
+    display: block;
+}
+
+.RTL #TicketOptions .Print {
+    margin: -2px 4px 0 0;
+}
+
+#TicketOptions .ZoomExpandOne {
+    width: 16px;
+    height: 16px;
+    margin: 0 0 0 2px;
+    line-height: 16px;
+    background: url(../img/zoomexpandone.png) no-repeat;
+    text-indent: -9999px;
+    display: block;
+}
+
+.RTL #TicketOptions .ZoomExpandOne {
+    margin: -2px 4px 0 0;
+}
+
+#TicketOptions .ZoomExpandAll {
+    width: 16px;
+    height: 16px;
+    margin: 0 0 0 2px;
+    line-height: 16px;
+    background: url(../img/zoomexpandall.png) no-repeat;
+    text-indent: -9999px;
+    display: block;
+}
+
+.RTL #TicketOptions .ZoomExpandAll {
+    margin: -2px 4px 0 0;
+}
+
+.TicketZoom .Age {
+    width: auto;
+    padding: 0;
+}
+
+/**
+ * @section     Messages
+ */
+
+#Messages {
+    border: 1px solid #E9E9E9;
+    border-bottom: 1px solid #DDD;
+    border-radius: 5px;
+    border-radius: 5px;
+    -webkit-box-shadow: 0 0 3px #EEE;
+    box-shadow: 0 0 2px #EEE;
+    position: relative;
+    z-index: 10;
+    width: 80%;
+    float: left;
+}
+
+#Messages li {
+    border-top: 1px solid #FFF;
+    position: relative;
+}
+
+#Messages li:first-child,
+#Messages li:first-child .MessageHeader {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+#Messages li:last-child,
+#Messages li:last-child .MessageHeader,
+#Messages li:last-child .MessageContent {
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+#Messages li:last-child .MessageHeader,
+#Messages li.Visible:last-child .MessageContent {
+    border-width: 0;
+}
+
+#Messages li.Visible:last-child .MessageHeader {
+    border-radius: 0;
+    border-width: 1px;
+}
+
+.MessageHeader {
+    padding: 5px 8px 3px;
+    color: #6A6A6A;
+    background: -moz-linear-gradient(top,  #f6f6f6 0%, #b6b6b6 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f6f6f6), color-stop(100%,#b6b6b6));
+    background: -webkit-linear-gradient(top,  #f6f6f6 0%,#b6b6b6 100%);
+    background: -o-linear-gradient(top,  #f6f6f6 0%,#b6b6b6 100%);
+    background: -ms-linear-gradient(top,  #f6f6f6 0%,#b6b6b6 100%);
+    background: linear-gradient(to bottom,  #f6f6f6 0%,#b6b6b6 100%);
+    border-bottom: 1px solid #D6D6D6;
+    text-shadow: 0 1px 0 #FFF;
+    position: relative;
+}
+
+.Visible .MessageHeader,
+.Visible .MessageHeader a {
+    color: #222;
+}
+
+.MessageHeader a {
+    color: #6A6A6A;
+}
+
+.MessageHeader h3 {
+    font-weight: bold;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 90%;
+}
+
+.RTL .MessageHeader h3 {
+    padding-left: 100px;
+}
+
+.MessageHeader h3 span {
+    font-weight: normal;
+}
+
+.MessageHeader .Age {
+    position: absolute;
+    top: 5px;
+    right: 8px;
+}
+
+.RTL .MessageHeader .Age {
+    left: 8px;
+}
+
+.MessageBody {
+    height: 0;
+    overflow: hidden;
+}
+
+#Messages li.Visible .MessageBody {
+    height: auto;
+}
+
+#NoArticles {
+    border: 1px solid #E9E9E9;
+    border-bottom: 1px solid #DDD;
+    border-radius: 5px;
+    border-radius: 5px;
+    -webkit-box-shadow: 0 0 3px #EEE;
+    box-shadow: 0 0 2px #EEE;
+    position: relative;
+    z-index: 10;
+    width: 80%;
+    float: left;
+}
+
+#NoArticles li {
+    line-height: 30px;
+    padding: 2px 10px;
+    border-top: 1px solid #FFF;
+    position: relative;
+}
+
+.SeperatorRow {
+    border-top: 1px solid #FFF;
+    border-bottom: 1px solid #E8E8E8;
+    background: #FCFCFC;
+    background: -moz-linear-gradient(top,  #ffffff 0%, #fcfcfc 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#fcfcfc));
+    background: -webkit-linear-gradient(top,  #ffffff 0%,#fcfcfc 100%);
+    background: -o-linear-gradient(top,  #ffffff 0%,#fcfcfc 100%);
+    background: -ms-linear-gradient(top,  #ffffff 0%,#fcfcfc 100%);
+    background: linear-gradient(to bottom,  #ffffff 0%,#fcfcfc 100%);
+}
+
+.Details {
+    padding: 4px 13px;
+    font-size: 11px;
+    color: #525252;
+    line-height: 16px;
+}
+
+.Details > div {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.Details .Label {
+    width: 65px;
+    margin: 0 3px;
+    color: #AAA;
+    float: left;
+    text-align: right;
+}
+.RTL .Details .Label {
+    text-align: left;
+}
+
+.Details .Attachments {
+    padding-top: 2px;
+}
+
+.Details .Attachments .Label {
+    background: url(../img/paper-clip.png) no-repeat right;
+    text-indent: -9999px;
+    text-align:left;
+}
+.RTL .Details .Attachments .Label {
+    background-position: left;
+    text-indent: -9999px;
+    text-align:right;
+}
+
+.Details .Attachments div {
+    display: inline-block;
+}
+
+.Details .Attachments span {
+    margin-right: 12px;
+}
+
+.RTL .Details .Attachments span {
+    margin-right: 0;
+    margin-left: 12px;
+}
+
+.DownloadAttachment a {
+    color: #000;
+}
+
+.MessageContent {
+    padding: 13px 8px;
+    background: #FFF;
+    border-bottom: 1px solid #E9E9E9;
+}
+
+.TicketZoom iframe {
+    width: 100%;
+    border: none;
+}
+
+#FollowUp  {
+    margin: 0 13px 8px;
+    color: #6A6A6A;
+    background: #F0F0F0;
+    background: -moz-linear-gradient(top,  #f9f9f9 0%, #f0f0f0 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f9f9f9), color-stop(100%,#f0f0f0));
+    background: -webkit-linear-gradient(top,  #f9f9f9 0%,#f0f0f0 100%);
+    background: -o-linear-gradient(top,  #f9f9f9 0%,#f0f0f0 100%);
+    background: -ms-linear-gradient(top,  #f9f9f9 0%,#f0f0f0 100%);
+    background: linear-gradient(to bottom,  #f9f9f9 0%,#f0f0f0 100%);
+    border-left: 1px solid #D6D6D6;
+    border-right: 1px solid #D6D6D6;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    position: relative;
+    width: 77%;
+    float: left;
+}
+
+#FollowUp.Visible {
+    border-bottom: 1px solid #D6D6D6;
+}
+
+.JavaScriptAvailable #FollowUp {
+    margin-bottom: 30px;
+}
+
+.JavaScriptAvailable #FollowUp #Messenger {
+    height: 0;
+    overflow: hidden;
+}
+
+#FollowUp.Visible #Messenger {
+    height: auto;
+    border-top: 1px solid #EEE;
+}
+
+#Messenger #Subject {
+    width: 300px;
+    color: #444;
+    background: transparent;
+    border-radius: 0;
+}
+
+#Messenger textarea {
+    display: block;
+}
+
+#Messenger textarea:focus {
+    border-color: #888;
+}
+
+#Messenger fieldset {
+    margin: 8px 7px 10px;
+    border-color: #D6D6D6;
+}
+
+.Attachment {
+    padding: 9px 0 4px 138px;
+}
+
+.RTL .Attachment {
+    padding: 9px 138px 4px 0;
+}
+
+#Messenger .ActionRow {
+    margin: 0 -1px -1px;
+    padding: 8px 13px;
+    background-position: -30px;
+    border: 1px solid #B8BBBB;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+    text-shadow: none;
+}
+
+#ReplyButton {
+    bottom: -22px;
+    height: 10px;
+    margin: 0 13px;
+    padding: 4px 8px 7px 24px;
+    color: #999;
+    background: #F0F0F0 url(../img/reply.png) no-repeat 6px 6px;
+    background: url(../img/reply.png) -moz-linear-gradient(top,  #f0f0f0 0%, #eeeeee 100%);
+    background: url(../img/reply.png) -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f0f0f0), color-stop(100%,#eeeeee));
+    background: url(../img/reply.png) -webkit-linear-gradient(top,  #f0f0f0 0%,#eeeeee 100%);
+    background: url(../img/reply.png) -o-linear-gradient(top,  #f0f0f0 0%,#eeeeee 100%);
+    background: url(../img/reply.png) -ms-linear-gradient(top,  #f0f0f0 0%,#eeeeee 100%);
+    background: url(../img/reply.png) linear-gradient(to bottom,  #f0f0f0 0%,#eeeeee 100%);
+    border: 1px solid #D6D6D6;
+    border-top: none;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    display: none;
+    position: absolute;
+    -webkit-box-shadow: 0 0 3px #F6F9F9;
+    box-shadow: 0 0 2px #F6F9F9;
+}
+
+.JavaScriptAvailable #ReplyButton {
+    display: block;
+}
+
+#ReplyButton:hover {
+    color: #555;
+}
+
+.Visible #ReplyButton {
+    display: none;
+}
+
+/**
+ * @subsection  Message colors
+ */
+
+.agent {
+
+}
+
+} /* end @media */
