@@ -4,7 +4,6 @@ Crypt::SSLeay
 Date::Format
 DBI
 DBD::mysql
-DBD::Oracle
 DBD::Pg
 Encode::HanExtra
 GD
