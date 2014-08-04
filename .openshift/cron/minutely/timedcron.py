@@ -28,7 +28,7 @@ for s in scripts:
         tracker[s['name']] = datetime.now().isoformat()
     else:
         currentdt = parse_date(tracker[s['name']])
-        elapsed = (datetime.now() - currentdt).total_seconds() / 60
+        elapsed = (datetime.now() - currentdt).seconds / 60
         if elapsed >= s['interval']:
             os.system('%s/otrs/%s' % (sys.env['OPENSHIFT_REPO_DIR'], s['script']))
             tracker[s['name']] = datetime.now().isoformat()
