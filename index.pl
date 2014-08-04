@@ -26,6 +26,8 @@ use warnings;
 use lib "$ENV{'OPENSHIFT_REPO_DIR'}/otrs";
 use lib "$ENV{'OPENSHIFT_REPO_DIR'}/otrs/Kernel/cpan-lib";
 use lib "$ENV{'OPENSHIFT_REPO_DIR'}/otrs/Custom";
+use lib "$ENV{'OPENSHIFT_REPO_DIR'}/otrs/Kernel/Modules";
+
 
 # 0=off;1=on;
 my $Debug = 0;

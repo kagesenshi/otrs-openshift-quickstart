@@ -3,4 +3,4 @@
 $OPENSHIFT_REPO_DIR/otrs/bin/otrs.CheckModules.pl 
 $OPENSHIFT_REPO_DIR/otrs/bin/otrs.SetPermissions.pl $OPENSHIFT_REPO_DIR/otrs/ --otrs-user=$OPENSHIFT_APP_UUID --web-user=$OPENSHIFT_APP_UUID --otrs-group=$OPENSHIFT_APP_UUID --web-group=$OPENSHIFT_APP_UUID --admin-group=$OPENSHIFT_APP_UUID --admin-group=$OPENSHIFT_APP_UUID --not-root
 
-export PERL5LIB=$PERL5LIB:$OPENSHIFT_REPO_DIR/otrs:$OPENSHIFT_REPO_DIR/otrs/Kernel/cpan-libs:$OPENSHIFT_REPO_DIR/otrs/Custom
+export PERL5LIB=$PERL5LIB:$OPENSHIFT_REPO_DIR/otrs:$OPENSHIFT_REPO_DIR/otrs/Kernel/cpan-libs:$OPENSHIFT_REPO_DIR/otrs/Custom:$OPENSHIFT_REPO_DIR/otrs/Kernel/Modules
