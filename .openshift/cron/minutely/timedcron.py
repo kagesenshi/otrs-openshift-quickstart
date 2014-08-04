@@ -2,6 +2,7 @@
 import sys
 import os
 import json
+from dateutil.parser import parse as parse_date
 from datetime import datetime
 
 currdir = os.path.dirname(__file__)
@@ -24,11 +25,12 @@ scripts = [
 for s in scripts:
     if s['name'] not in tracker:
         os.system('%s/%s' % (os.environ['OPENSHIFT_REPO_DIR'], s['script']))
-        tracker[s['name']] = datetime.now()
+        tracker[s['name']] = datetime.now().isoformat()
     else:
-        elapsed = (datetime.now() - tracker[s['name']]).total_seconds() / 60
+        currentdt = parse_date(tracker[s['name']])
+        elapsed = (datetime.now() - currentdt).total_seconds() / 60
         if elapsed >= s['interval']:
             os.system('%s/%s' % (sys.env['OPENSHIFT_REPO_DIR'], s['script']))
-            tracker[s['name']] = datetime.now()
+            tracker[s['name']] = datetime.now().isoformat()
 
 open(trackerfile, 'w').write(json.dumps(tracker))
