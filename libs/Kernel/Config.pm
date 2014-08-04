@@ -68,9 +68,9 @@ sub Load {
     # ---------------------------------------------------- #
     # fs root directory
     # ---------------------------------------------------- #
-    $Self->{Home} = "$ENV{'OPENSHIFT_REPO_DIR'}/otrs/";
+    $Self->{Home} = "$ENV{'OPENSHIFT_REPO_DIR'}/libs/";
 
-    $Self->{'Frontend::WebPath'} = '/otrs/var/httpd/htdocs/';
+    $Self->{'Frontend::WebPath'} = '/libs/var/httpd/htdocs/';
 
     # ---------------------------------------------------- #
     # insert your own config settings "here"               #
