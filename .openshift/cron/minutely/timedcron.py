@@ -23,7 +23,7 @@ scripts = [
 
 for s in scripts:
     if s['name'] not in tracker:
-        os.system('%s/%s' % (sys.env['OPENSHIFT_REPO_DIR'], s['script']))
+        os.system('%s/%s' % (os.environ['OPENSHIFT_REPO_DIR'], s['script']))
         tracker[s['name']] = datetime.now()
     else:
         elapsed = (datetime.now() - tracker[s['name']]).total_seconds() / 60
