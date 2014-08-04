@@ -23,11 +23,11 @@ use strict;
 use warnings;
 
 # use ../../ as lib location
-chdir "$ENV{'OPENSHIFT_REPO_DIR'}/otrs";
-use lib "$ENV{'OPENSHIFT_REPO_DIR'}/otrs";
-use lib "$ENV{'OPENSHIFT_REPO_DIR'}/otrs/Kernel/cpan-lib";
-use lib "$ENV{'OPENSHIFT_REPO_DIR'}/otrs/Custom";
-use lib "$ENV{'OPENSHIFT_REPO_DIR'}/otrs/Kernel/Modules";
+chdir "$ENV{'OPENSHIFT_REPO_DIR'}/libs";
+use lib "$ENV{'OPENSHIFT_REPO_DIR'}/libs";
+use lib "$ENV{'OPENSHIFT_REPO_DIR'}/libs/Kernel/cpan-lib";
+use lib "$ENV{'OPENSHIFT_REPO_DIR'}/libs/Custom";
+use lib "$ENV{'OPENSHIFT_REPO_DIR'}/libs/Kernel/Modules";
 
 
 # 0=off;1=on;
