@@ -15,6 +15,8 @@ requires 'List::Util::XS';
 requires 'LWP::UserAgent';
 requires 'Mail::IMAPClient';
 requires 'IO::Socket::SSL';
+requires 'Net::DNS';
+requires 'PDF::API2';
 requires 'Net::LDAP';
 requires 'Net::SSL';
 requires 'Compress::Zlib';
