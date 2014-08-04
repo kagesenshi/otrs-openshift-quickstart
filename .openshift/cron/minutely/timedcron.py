@@ -30,7 +30,7 @@ for s in scripts:
         currentdt = parse_date(tracker[s['name']])
         elapsed = (datetime.now() - currentdt).seconds / 60
         if elapsed >= s['interval']:
-            os.system('%s/otrs/%s' % (sys.env['OPENSHIFT_REPO_DIR'], s['script']))
+            os.system('%s/otrs/%s' % (os.environ['OPENSHIFT_REPO_DIR'], s['script']))
             tracker[s['name']] = datetime.now().isoformat()
 
 open(trackerfile, 'w').write(json.dumps(tracker))
