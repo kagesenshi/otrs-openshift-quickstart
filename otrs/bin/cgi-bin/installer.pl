@@ -23,10 +23,9 @@ use strict;
 use warnings;
 
 # use ../../ as lib location
-use FindBin qw($Bin);
-use lib "$Bin/../..";
-use lib "$Bin/../../Kernel/cpan-lib";
-use lib "$Bin/../../Custom";
+use lib "$ENV{'OPENSHIFT_REPO_DIR'}/otrs";
+use lib "$ENV{'OPENSHIFT_REPO_DIR'}/otrs/Kernel/cpan-lib";
+use lib "$ENV{'OPENSHIFT_REPO_DIR'}/otrs/Custom";
 
 # 0=off;1=on;
 my $Debug = 0;
