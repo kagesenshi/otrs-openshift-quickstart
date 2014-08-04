@@ -1,3 +1,4 @@
 #!/bin/bash
 
 $OPENSHIFT_REPO_DIR/otrs/bin/otrs.CheckModules.pl 
+$OPENSHIFT_REPO_DIR/otrs/bin/otrs.SetPermissions.pl $OPENSHIFT_REPO_DIR/otrs/ --otrs-user=$OPENSHIFT_APP_UUID --web-user=$OPENSHIFT_APP_UUID --otrs-group=$OPENSHIFT_APP_UUID --web-group=$OPENSHIFT_APP_UUID
