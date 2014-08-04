@@ -70,6 +70,8 @@ sub Load {
     # ---------------------------------------------------- #
     $Self->{Home} = "$ENV{'OPENSHIFT_REPO_DIR'}/otrs/";
 
+    $Self->{'Frontend::WebPath'} = '/otrs/var/httpd/htdocs/';
+
     # ---------------------------------------------------- #
     # insert your own config settings "here"               #
     # config settings taken from Kernel/Config/Defaults.pm #
