@@ -16,6 +16,7 @@ scripts = [
         {'name': 'agent2', 'interval': 20, 'script': 'bin/otrs.GenericAgent.pl >> /dev/null'},
         {'name': 'pendingjobs', 'interval': 120, 'script': 'bin/otrs.PendingJobs.pl >> /dev/null'},
         {'name': 'postmaster', 'interval': 10, 'script': 'bin/otrs.PostMasterMailbox.pl >> /dev/null'},
+        {'name': 'scheduler', 'interval': 5, 'script': 'bin/otrs.Scheduler.pl -w 1 >> /dev/null'},
         {'name': 'deletesession', 'interval': 120, 'script': 'bin/otrs.DeleteSessionIDs.pl --expired >> /dev/null'},
         {'name': 'unlocktickets', 'interval': 30, 'script': 'bin/otrs.UnlockTickets.pl --timeout >> /dev/null'}
 ]
