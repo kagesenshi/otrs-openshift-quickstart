@@ -3,5 +3,5 @@
 $OPENSHIFT_REPO_DIR/otrs/bin/otrs.CheckModules.pl 
 $OPENSHIFT_REPO_DIR/otrs/bin/otrs.SetPermissions.pl $OPENSHIFT_REPO_DIR/otrs/ --otrs-user=$OPENSHIFT_APP_UUID --web-user=$OPENSHIFT_APP_UUID --otrs-group=$OPENSHIFT_APP_UUID --web-group=$OPENSHIFT_APP_UUID --admin-group=$OPENSHIFT_APP_UUID --admin-group=$OPENSHIFT_APP_UUID --not-root
 
-MODULES=`find $OPENSHIFT_REPO_DIR/otrs |grep '.pm$'|xargs dirname '{}' ';'|sort|uniq|sed ':a;N;$!ba;s|\n|:|g'`
+MODULES=`find $OPENSHIFT_REPO_DIR/otrs -regex '.*pm$' -exec dirname '{}' ';'|sort|uniq|sed ':a;N;$!ba;s|\n|:|g'`
 export PERL5LIB=$PERL5LIB:$MODULES
